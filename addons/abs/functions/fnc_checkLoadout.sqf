@@ -14,7 +14,7 @@ private _bandagesCount = 0;
                _bandages set [_index, ((_bandages select _index) pushback _x)];
                _bandagesCount = _bandagesCount +1;
             };
-         }forEach ([["ACE_fieldDressing"], ["ACE_packingBandage", "ACE_elasticBandage", "ACE_quikclot"]] select (_level == 0));
+         }forEach ["ACE_fieldDressing", "ACE_packingBandage", "ACE_elasticBandage", "ACE_quikclot"];
       } forEach (_itemsInLoadout select 1);
    };
 }forEach [3,4,5];
