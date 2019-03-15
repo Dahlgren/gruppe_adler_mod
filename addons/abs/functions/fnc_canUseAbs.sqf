@@ -26,7 +26,7 @@ if (_caller == _target) exitwith { false };
 
 //check if mediical system is aktiv & for enough bandages
 private _return = switch (ace_medical_level) do {
-   case 0 : {false};
+   case 0 : { false };
    case 1 : {
       [_caller, 0] call FUNC(checkLoadout);
    };
@@ -38,7 +38,10 @@ private _return = switch (ace_medical_level) do {
 if !(_return) exitWith { false };
 
 //check if needs medic
-if ((GVAR(allowABS) == 1) && {!([_caller, GVAR(allowABS)] call ace_medical_fnc_isMedic)}) exitwith { false };
+if (
+    (GVAR(allowABS) == 1) &&
+    {!([_caller, GVAR(allowABS)] call ace_medical_fnc_isMedic)}
+) exitwith { false };
 
 //check for wounds
 private _openWounds = _target getVariable ["ace_medical_openWounds", []];
