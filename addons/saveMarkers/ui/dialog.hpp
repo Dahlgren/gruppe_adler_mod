@@ -157,6 +157,21 @@ class GVAR(RscDisplayMarkers) {
                     class ScrollBar;
                 };
 
+                class sideList: RscListNBox {
+                    idc = IDC_SIDELIST;
+
+                    x = 0.5 * X_FACTOR;
+                    y = 1.6 * Y_FACTOR;
+                    w = 19 * X_FACTOR;
+                    h = 17.5 * Y_FACTOR;
+
+                    sizeEx = 0.8 * Y_FACTOR;
+                    columns[] = {0,0.7};
+
+                    class ListScrollBar;
+                    class ScrollBar;
+                };
+
                 class buttonCancel: RscButtonMenu {
                     idc = -1;
                     text = "Cancel";

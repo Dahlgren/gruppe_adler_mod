@@ -1,6 +1,5 @@
 #include "script_component.hpp"
 
-
 private _title = "Save Markers";
 private _helpText = "
 If you slotted for a commanding role in an upcoming mission, this tool will come in handy. Save Markers allows you to save any markers from one mission and load them in another. That means you can just start a game in advance to the actual mission, draw your plan on the map, and save it for later. On gameday, you can load your markers instantly, saving valuable preparation time.<br/>

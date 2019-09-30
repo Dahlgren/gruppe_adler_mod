@@ -7,6 +7,7 @@
 #define IDC_MAP                     67600
 #define IDC_HELP                    67991
 #define IDC_HELP_TEXT               67992
+#define IDC_SIDELIST				67993
 
 #define X_FACTOR                    (((safezoneW / safezoneH) min 1.2) / 40)
 #define Y_FACTOR                    ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)
