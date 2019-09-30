@@ -9,10 +9,22 @@ You can open the Save Marker dialog with the chatcommand '#grad-saveMarkers', or
 <execute expression='openMap [false,false]; [grad_saveMarkers_fnc_loadDisplay,[]] call CBA_fnc_execNextFrame;'>[Open Save Markers]</execute>
 ";
 
-[_title,_helpText] call EFUNC(ui,addHelpRecord);
+[_title, _helpText] call EFUNC(ui,addHelpRecord);
 
-["grad-saveMarkers",{
+["grad-saveMarkers", {
     [] call FUNC(openDialog);
-},"all"] call CBA_fnc_registerChatCommand;
+}, "all"] call CBA_fnc_registerChatCommand;
 
 [] call FUNC(loadNotification);
+
+[
+	QGVAR(createMapMarkers),
+	{
+		params ["_profilName", "_saveName", "_mapName", "_markersData", "_side"];
+
+		if (!(_side isEqualTo "ALL") && {!(_side isEqualTo str side ace_player)}) exitWith {};
+
+		[_saveName, _mapName, _markersData, _side] call FUNC(loadMarkers);
+		systemChat format ["grad-saveMarkers: %1 just loaded his marker set %2.", _profileName, _saveName];
+	}
+] call CBA_fnc_addEventHandler;

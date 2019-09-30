@@ -15,4 +15,4 @@ if (isNil "_ctrlEditName") then {
 
 private _editText = ctrlText _ctrlEditName;
 private _ctrlSavesList = _display displayCtrl IDC_SAVESLIST;
-_ctrlSavesList lnbSetCurSelRow ([_editText,worldName] call FUNC(findSaveInList));
+_ctrlSavesList lnbSetCurSelRow ([_editText, worldName] call FUNC(findSaveInList));

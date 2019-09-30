@@ -2,7 +2,7 @@
 
 params [["_markersData",[]]];
 
-private _previewMarkers = missionNamespace getVariable [QGVAR(previewMarkers),[]];
+private _previewMarkers = missionNamespace getVariable [QGVAR(previewMarkers), []];
 {deleteMarker _x} forEach _previewMarkers;
 
 GVAR(previewMarkers) = [];
@@ -20,9 +20,9 @@ GVAR(previewMarkers) = [];
         "_channel"
     ];
 
-    private _markerID = format ["_USER_DEFINED #-1/%1/%2",_forEachIndex,_channel];
+    private _markerID = format ["_USER_DEFINED #-1/%1/%2", _forEachIndex, _channel];
 
-    private _marker = createMarkerLocal [_markerID,_pos];
+    private _marker = createMarkerLocal [_markerID, _pos];
     _marker setMarkerAlphaLocal _alpha;
     _marker setMarkerBrushLocal _brush;
     _marker setMarkerColorLocal _color;

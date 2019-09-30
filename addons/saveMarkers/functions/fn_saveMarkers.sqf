@@ -1,10 +1,10 @@
 #include "script_component.hpp"
 
-params ["_saveAs","_worldName","_markers"];
+params ["_saveAs", "_worldName", "_markers"];
 
 private _saveMarkersData = profileNamespace getVariable QGVAR(saveData);
 if (isNil "_saveMarkersData") then {
-    profileNamespace setVariable [QGVAR(saveData),[]];
+    profileNamespace setVariable [QGVAR(saveData), []];
     _saveMarkersData = profileNamespace getVariable QGVAR(saveData);
 };
 

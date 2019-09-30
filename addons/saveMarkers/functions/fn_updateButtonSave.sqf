@@ -10,4 +10,4 @@ if (isNil "_display") then {
 private _editText = ctrlText (_display displayCtrl IDC_EDITNAME);
 private _enabled = (count _editText > 0) && {count GVAR(selectedMarkers) > 0};
 
-[IDC_BUTTONSAVE,_enabled] call FUNC(setButtonEnabled);
+[IDC_BUTTONSAVE, _enabled] call FUNC(setButtonEnabled);

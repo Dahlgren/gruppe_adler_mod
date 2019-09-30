@@ -10,6 +10,6 @@ private _ctrlEdit = _display displayCtrl IDC_EDITNAME;
 
 private _saveAs = ctrlText _ctrlEdit;
 
-[_saveAs,worldName,GVAR(selectedMarkers)] call FUNC(saveMarkers);
+[_saveAs, worldName, GVAR(selectedMarkers)] call FUNC(saveMarkers);
 [_display] call FUNC(updateSavesList);
-[_display,-1] call FUNC(setListSelected);
+[_display, -1] call FUNC(setListSelected);

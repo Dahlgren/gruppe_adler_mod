@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 #include "..\ui\defines.hpp"
 
-params ["_display",["_selID",-1]];
+params ["_display", ["_selID",-1]];
 
 if (isNil "_display") then {
     _display = findDisplay IDD_SAVEMARKERS;

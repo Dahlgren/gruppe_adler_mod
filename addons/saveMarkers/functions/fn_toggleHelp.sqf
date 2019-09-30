@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 #include "..\ui\defines.hpp"
 
-GVAR(helpEnabled) = !(missionNamespace getVariable [QGVAR(helpEnabled),false]);
+GVAR(helpEnabled) = !(missionNamespace getVariable [QGVAR(helpEnabled), false]);
 
 private _display = findDisplay IDD_SAVEMARKERS;
 private _ctrlHelp = _display displayCtrl IDC_HELP;

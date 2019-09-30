@@ -3,7 +3,7 @@
 params ["_display","_key","","_ctrl","_alt"];
 
 // user is currently typing in editName box
-if (_display getVariable [QGVAR(editNameFocused),false]) exitWith {};
+if (_display getVariable [QGVAR(editNameFocused), false]) exitWith {};
 
 // H key
 if (_key == 35) exitWith {

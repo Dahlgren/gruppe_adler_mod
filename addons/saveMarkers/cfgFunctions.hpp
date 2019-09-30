@@ -1,7 +1,7 @@
 class cfgFunctions {
-	class grad_saveMarkers {
-		class common {
-			file = "x\grad\addons\saveMarkers\functions";
+    class grad_saveMarkers {
+        class common {
+            file = "x\grad\addons\saveMarkers\functions";
 
             class allMarkers {};
             class createMarkerPreview {};
@@ -29,6 +29,6 @@ class cfgFunctions {
             class toggleHelp {};
             class updateButtonSave {};
             class updateSavesList {};
-		};
-	};
+        };
+    };
 };
